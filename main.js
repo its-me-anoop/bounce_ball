@@ -1,15 +1,13 @@
 let ball = document.getElementById('float-circle');
 
 // Write your code below
-function up(element) {
-    element.style.bottom = '250px';
-    console.log('clicked up');
-};
+function up() {
+    ball.style.bottom = '250px';
+}
 
-function down(element) {
-    element.style.bottom = '50px';
-    console.log('clicked down');
-};
+function down() {
+    ball.style.bottom = '50px';
+}
 
-document.onkeyup = down(ball);
-document.onkeydown = up(ball);
+document.onkeydown = up();
+document.onkeyup = down();
